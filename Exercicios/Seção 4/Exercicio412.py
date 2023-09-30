@@ -1,9 +1,9 @@
 """
-Exercicio 11: Leia uma velocidade em m/s e apresente-a convertida em km/h.
+Exercicio 12: Leia uma distancia em milhas e apresente-a convertida em quilômetros.
 """
 
-print("Vamos converter uma velocidade de Km/h em m/s")
-print("Quantos m/s quer converter??")
+print("Vamos fazer uma conversão de milhas para quilômetros.")
+print("Quantas milhas quer converter?")
 while True:
     try:
         M = float(input())
@@ -14,5 +14,5 @@ while True:
     else:
         break
 
-K = M * 3.6
-print(f"A conversão foi realizada: {K:.2f}Km/h.")
+K = 1.61 * M
+print(f"A distância em quilômetros é de {K:.2f}Km.")

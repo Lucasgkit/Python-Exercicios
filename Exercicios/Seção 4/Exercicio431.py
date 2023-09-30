@@ -1,14 +1,8 @@
 """
-Exercicio 30: Leia um valor em real e a cotação do dólar.
-Em seguida, imprima o valor correspondente em dólares
+Exercicio 31: Leia um número inteiro e imprima o seu antecessor e o seu sucessor.
 """
 
-print("Vamos fazer a conversão de reais para dólares")
-print("Por favor digite quantos reais quer converter")
-R = float(input())
-print("Por favor digite a cotação do dólar")
-C = float(input())
+print("Por favor digite um número inteiro")
+num = int(input())
 
-D = R * C
-
-print(f"A conversão deu ${D:.2f} dólares")
+print(f"O número antecessor é {num-1} e o número sucessor é {num+1}")

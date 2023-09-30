@@ -1,13 +1,14 @@
 """
-Exercicio 29: Leia quatro notas, calcule a média aritmética e imprima o resultado.
+Exercicio 30: Leia um valor em real e a cotação do dólar.
+Em seguida, imprima o valor correspondente em dólares
 """
 
-print("Vamos calcular a media de suas notas")
-print("Por favor digite suas quatro notas.")
-nota1 = float(input())
-nota2 = float(input())
-nota3 = float(input())
-nota4 = float(input())
-resul = (nota1 + nota2 + nota3 + nota4) / 4
+print("Vamos fazer a conversão de reais para dólares")
+print("Por favor digite quantos reais quer converter")
+R = float(input())
+print("Por favor digite a cotação do dólar")
+C = float(input())
 
-print(f"A sua media é {resul:.2f}")
+D = R * C
+
+print(f"A conversão deu ${D:.2f} dólares")

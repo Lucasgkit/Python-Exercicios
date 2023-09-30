@@ -1,18 +1,14 @@
 """
-Exercicio 27: Leia um valor de área em hectares e apresente-o convertido em metros quadrados m².
+Exercicio 28: Faça a leitura de três valores e apresente como resultado a soma dos quadrados dos três valores lidos.
 """
 
-print("Vamos fazer uma conversão de hectares para metros quadrados.")
-print("Digite quantos hectares quer converter?")
-while True:
-    try:
-        H = float(input())
-        if not -10000 <= H <= 10000:
-            raise ValueError("Este numero é muito grande por favor digite um numero menor.")
-    except ValueError as e:
-        print("Valor inválido, por favor digite apenas numeros.")
-    else:
-        break
+print("Por favor digite três valores")
+valor1 = float(input())
+valor2 = float(input())
+valor3 = float(input())
+valor1Q = valor1 ** 2
+valor2Q = valor2 ** 2
+valor3Q = valor3 ** 2
+resul = valor1Q + valor2Q + valor3Q
 
-M = H * 10000
-print(f"A conversão resultou em {M:.2f}m².")
+print(f"A soma do quadrado dos 3 valores é {resul:.2f}")

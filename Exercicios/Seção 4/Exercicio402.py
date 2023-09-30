@@ -1,7 +1,7 @@
 """
-Exercicio 1: Faça um programa que leia um número inteiro e o imprima.
+Exercicio 2: Faça um programa que leia um número real e o imprima.
 """
 
-print("Por favor digite um numero inteiro")
-inteiro = int(input())
-print(f"O numero {inteiro} é um numero inteiro")
+print("Por favor digite um numero real")
+real = float(input())
+print(f"O numero {real} é um numero real")

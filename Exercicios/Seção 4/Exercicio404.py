@@ -1,10 +1,8 @@
 """
-Exercicio 3: Peça ao usuario para digitar três valores inteiros e imprima a soma deles.
+Exercicio 4: Leia um número real e imprima o resultado do quadrado desse número.
 """
 
-print("Por favor digite tres valores inteiros")
-val1 = int(input())
-val2 = int(input())
-val3 = int(input())
-valf = val1 + val2 + val3
-print(f"A soma desses valores é {valf}")
+print("Por favor digite um numero real")
+num = float(input())
+res = num ** 2
+print(f"O numero {num} ao quadrado é {res:.2f}.")

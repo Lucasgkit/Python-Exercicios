@@ -1,11 +1,9 @@
 """
-Exercicio 32: Leia um número inteiro e imprima a soma do sucessor de seu triplo com
-o antecessor de seu dobro.
+Exercicio 33: Leia o tamanho do lado de um quadrado e imprima como resultado a sua área.
 """
 
-print("Por favor digite um número inteiro")
-num = int(input())
-nums = (num ** 3) + 1
-numa = (num ** 2) - 1
-resul = nums + numa
-print(f"A soma do sucessor de seu triplo com o antecessor de seu dobre é {resul}")
+print("Vamos calcular a área de um quadrado em cm")
+print("Por favor diga o tamanho do lado do quadrado")
+L = float(input())
+resul = L ** 2
+print(f"A área do quadrado é {resul}cm")

@@ -1,18 +1,18 @@
 """
-Exercicio 8: Leia uma temperatura em graus Celsius e apresente-a convertida em graus Kelvin.
+Exercicio 10: Leia uma velocidade em km/h e apresente-a convertida em m/s.
 """
 
-print("Vamos fazer uma conversão de graus Celsius para Kelvin.")
-print("Quantos graus Celsius quer converter?")
+print("Vamos converter uma velocidade de Km/h em m/s")
+print("Quantos Km/h quer converter??")
 while True:
     try:
-        C = float(input())
-        if not -10000 <= C <= 10000:
+        K = float(input())
+        if not -10000 <= K <= 10000:
             raise ValueError("Este numero é muito grande por favor digite um numero menor.")
     except ValueError as e:
         print("Valor inválido, por favor digite apenas numeros.")
     else:
         break
 
-K = C + 273.15
-print(f"A temperatura em graus Kelvin é {K:.2f}.")
+M = K / 3.6
+print(f"A conversão foi realizada: {M:.2f}m/s.")

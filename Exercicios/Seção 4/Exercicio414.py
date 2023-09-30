@@ -1,18 +1,18 @@
 """
-Exercicio 12: Leia uma distancia em quilômetros e apresente-a convertida em milhas.
+Exercicio 14: Leia um ângulo em graus e apresente-o convertido em radianos
 """
 
-print("Vamos fazer uma conversão de quilômetros para milhas.")
-print("Quantos quilômetros quer converter?")
+print("Vamos fazer uma conversão de graus para radianos.")
+print("Digite quantos graus quer converter?")
 while True:
     try:
-        K = float(input())
-        if not -10000 <= K <= 10000:
+        G = float(input())
+        if not -10000 <= G <= 10000:
             raise ValueError("Este numero é muito grande por favor digite um numero menor.")
     except ValueError as e:
         print("Valor inválido, por favor digite apenas numeros.")
     else:
         break
 
-M = K / 1.61
-print(f"A distância em milhas é de {M:.2f} milhas.")
+R = G * 3.14/180
+print(f"O ângulo foi convertido para {R:.2f} radianos.")
